@@ -9,6 +9,9 @@ app = Flask(__name__)
 from views import * 
 
 informaçoe = requests.get("https://api.deezer.com/version/service/id/method/?parameters")
+informaçoe = json(informaçoe)
+
+print("informaçoe")
 
 
 

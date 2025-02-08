@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Formulário de busca */
+#formBusca {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#br {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#botao {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao:hover {
+    background-color: #0056b3;
+}
+
+/* Área de resultados */
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#resultado ul {
+    list-style-type: none;
+}
+
+#resultado li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#resultado li strong {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#resultado img {
+    max-width: 100px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#resultado a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#resultado a:hover {
+    text-decoration: underline;
+}

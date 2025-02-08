@@ -15,7 +15,7 @@ def homepage():
         "output": "json"
     }
     api = "https://api.deezer.com/search/artist"
-    response = requests.get ('api', params = params)
+    response = requests.get (api, params = params)
 
 
 

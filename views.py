@@ -3,7 +3,7 @@ from flask import render_template
 import requests
 
 informaçoe = requests.get("https://api.deezer.com/version/service/id/method/?parameters")
-informaçoe = informaçoe.json
+informaçoe = informaçoe.json()
 
 @app.route("/")
 def homepage():

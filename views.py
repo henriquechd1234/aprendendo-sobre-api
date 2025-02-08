@@ -8,7 +8,7 @@ import requests
 def buscar_artista():
     try: 
         get = request.args.get("q")
-        if not termo: 
+        if not get: 
             return jsonify({"erro": "Parametro 'q' não foi encotrado"})
     
         params ={

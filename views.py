@@ -4,8 +4,8 @@ from flask import jsonify
 import requests
 
 
-@app.route("/busca")
-def busca():
+@app.route("/")
+def homepage():
     get = requests.args.get("q")
     
     params ={

@@ -1,12 +1,12 @@
 from main import app
 from flask import render_template
-from flask import jsonify
+from flask import jsonify, request
 import requests
 
 
 @app.route("/")
 def homepage():
-    get = requests.args.get("q")
+    get = request.args.get("q")
     
     params ={
         "q" : get,

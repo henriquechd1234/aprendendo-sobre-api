@@ -7,11 +7,10 @@
 </head>
 <body>
     <h1>Musica informações</h1>
-        
-    {% if info %}
-    <pre>{{ info | tojson(indent=4) }}</pre> 
-        {% else %}
-    <p>Não foi possível carregar os dados da API.</p>
-    {% endif %}
+    <div>
+    <input type="search" id="br">
+    <button type="submit" id="botao">pesquisar</button>
+</div>
+<script src="/static/pesquisa.js"></script>
 </body>
 </html>

@@ -4,13 +4,19 @@ from flask import jsonify
 import requests
 
 
-@app.route("/")
-def homepage():
-    api = "https://api.deezer.com/album/"
-    informaçoe = requests.get(api)
-    info = informaçoe.json()
+@app.route("/busca")
+def busca():
+    get = requests.args.get("q")
+    
+    params ={
+        "q" : get,
+        "index": 0,
+        "limit": 2,
+        "output": "json"
+    }
+    api = "https://api.deezer.com/search/artist"
+    response = requests.get ('api', params = params)
 
 
 
-
-    return render_template("index.html",info=info)
+    return jsonify(response.json())

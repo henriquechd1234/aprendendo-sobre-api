@@ -15,7 +15,7 @@ document.getElementById("formbusca").addEventListener("click", function(evento){
             const resultadoDiv = document.getElementById("resultado")
             if( data.data && data.data.length > 0){
                 resultadoDiv.innerHTML = `
-                    <h2>Resultados para "${barr}":</h2>
+                    <h2>Resultados para "${barra}":</h2>
                     <ul>
                         ${data.data.map(artista => `
                             <li>

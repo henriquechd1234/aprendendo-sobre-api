@@ -4,7 +4,7 @@ from flask import jsonify, request
 import requests
 
 
-@app.route("/buscar-artista")
+@app.route("/")
 def buscar_artista():
     try: 
         get = request.args.get("q")

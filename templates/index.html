@@ -8,8 +8,8 @@
 <body>
     <h1>Musica informações</h1>
         
-    {% if informações %}
-    <pre>{{ informações | tojson(indent=4) }}</pre> 
+    {% if info %}
+    <pre>{{ info | tojson(indent=4) }}</pre> 
         {% else %}
     <p>Não foi possível carregar os dados da API.</p>
     {% endif %}

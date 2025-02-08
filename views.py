@@ -7,4 +7,4 @@ informaçoe = informaçoe.json()
 
 @app.route("/")
 def homepage():
-    return render_template("index.html",informaçoe )
+    return render_template("index.html",informaçoe=informaçoe )

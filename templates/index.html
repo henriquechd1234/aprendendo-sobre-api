@@ -7,7 +7,11 @@
 </head>
 <body>
     <h1>Musica informações</h1>
-        informações
+        
+    {% if data %}
+    <pre>{{ data | tojson(indent=4) }}</pre> 
+        {% else %}
+    <p>Não foi possível carregar os dados da API.</p>
 
 </body>
 </html>

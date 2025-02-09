@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit, send
-
-app = Flask(__name__)
-
+from main import app
 
 app.config['SECRET_KEY'] = 'chave secreta'
 socketio = SocketIO(app, cors_allowed_origins="*")
@@ -15,7 +13,7 @@ def chat():
 @socketio.on('msgrecebida')
 def handle_message(data):
     print(f'Mensagem recebida: {data}')
-    send(data, broadcast=True)
+    emit('mensagem', data, broadcast=True)
 
 
 if __name__ == '__main__':

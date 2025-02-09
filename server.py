@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit, send
-from main import app
+
+app = Flask(__name__)
+
 
 app.config['SECRET_KEY'] = 'chave secreta'
 socketio = SocketIO(app, cors_allowed_origins="*")

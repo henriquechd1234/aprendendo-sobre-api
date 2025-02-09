@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 
 from views import * 
-
+from server import *
 
 
 

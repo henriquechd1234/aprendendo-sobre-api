@@ -26,7 +26,7 @@ def buscar_artista():
             "limit": 10,
             "output": "json"
     }
-            api = "https://api.deezer.com/search/album"
+            api = "https://api.deezer.com/search/artist"
             response = requests.get (api, params = params)
 
 

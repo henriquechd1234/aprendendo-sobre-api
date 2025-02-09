@@ -19,4 +19,4 @@ def handle_message(data):
 if __name__ == '__main__':
     import eventlet
     eventlet.monkey_patch()
-    socketio.run(app)
+    socketio.run(app, debug=True)
